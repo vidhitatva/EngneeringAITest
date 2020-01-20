@@ -66,6 +66,7 @@ struct Hits : Codable {
     let _tags : [String]?
     let objectID : String?
     let highlightResult : _highlightResult?
+    var isActive : Bool = false
     
     enum CodingKeys: String, CodingKey {
         

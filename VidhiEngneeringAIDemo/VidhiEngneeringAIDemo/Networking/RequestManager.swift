@@ -38,13 +38,11 @@ final class RequestManager {
                         
                     }else{
                         complition(false,Data(),"No data found")
-
                     }
                     break
                 case .failure:
                     if let message = response.error {
                         complition(false,Data(),message.localizedDescription)
-
                     }else {
                         complition(false,Data(),"No data found")
                     }
@@ -52,7 +50,6 @@ final class RequestManager {
                 }
             }
         }
-        
     }
     
     func createRequest(url:String, method:HTTPMethod,header:[String:String] = [:],parameter:[String:Any] = [:]) -> Request{
