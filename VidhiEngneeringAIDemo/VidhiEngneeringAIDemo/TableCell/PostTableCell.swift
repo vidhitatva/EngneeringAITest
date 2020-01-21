@@ -9,16 +9,16 @@
 import UIKit
 
 class PostTableCell: UITableViewCell {
-    @IBOutlet weak var labelPostTitle: UILabel!
-    @IBOutlet weak var labelPostDate: UILabel!
+    @IBOutlet private weak var labelPostTitle: UILabel!
+    @IBOutlet private weak var labelPostDate: UILabel!
     @IBOutlet weak var switchPostActiveDeactive: UISwitch!
-
+    var changeNavigationTitle:((Hits)->())?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    var postHint : Hits? {
+    var postHint : Hits! {
         didSet {
             if let hint = self.postHint {
                 if let title = hint.title {
@@ -37,6 +37,11 @@ class PostTableCell: UITableViewCell {
                 self.switchPostActiveDeactive.isOn = hint.isActive
             }
         }
+    }
+
+    @IBAction func activeDeactivePost(sender : UISwitch) {
+        postHint.isActive = !postHint.isActive
+        self.changeNavigationTitle?(postHint)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

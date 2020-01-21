@@ -32,8 +32,6 @@ final class RequestManager {
                 switch response.result {
                 case .success:
                     if let resultdata = response.result.value {
-                        let resonse = String(data: resultdata, encoding: String.Encoding.utf8)
-                        print(resonse!)
                         complition(true,resultdata,"success")
                         
                     }else{

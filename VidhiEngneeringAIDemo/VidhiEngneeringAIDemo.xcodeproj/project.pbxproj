@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1CB7AA6323D57139000C7E67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7AA6223D57139000C7E67 /* AppDelegate.swift */; };
-		1CB7AA6523D57139000C7E67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7AA6423D57139000C7E67 /* ViewController.swift */; };
 		1CB7AA6823D57139000C7E67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB7AA6623D57139000C7E67 /* Main.storyboard */; };
 		1CB7AA6A23D5713B000C7E67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB7AA6923D5713B000C7E67 /* Assets.xcassets */; };
 		1CB7AA6D23D5713B000C7E67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB7AA6B23D5713B000C7E67 /* LaunchScreen.storyboard */; };
@@ -17,14 +16,13 @@
 		1CB7AA7E23D57439000C7E67 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7AA7D23D57439000C7E67 /* RequestManager.swift */; };
 		1CB7AA8023D57447000C7E67 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7AA7F23D57447000C7E67 /* PostController.swift */; };
 		1CB7AA8223D57451000C7E67 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7AA8123D57451000C7E67 /* Post.swift */; };
-		1CB7AA8523D57474000C7E67 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB7AA8423D57474000C7E67 /* Constant.swift */; };
+		1CCE599923D6D1020066FBB6 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CCE599823D6D1020066FBB6 /* APIEndPoint.swift */; };
 		9C1E237CA83AF4EF89461BA4 /* Pods_VidhiEngneeringAIDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCEF4707FE6687D7ED9B080A /* Pods_VidhiEngneeringAIDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1CB7AA5F23D57139000C7E67 /* VidhiEngneeringAIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VidhiEngneeringAIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB7AA6223D57139000C7E67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1CB7AA6423D57139000C7E67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1CB7AA6723D57139000C7E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CB7AA6923D5713B000C7E67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CB7AA6C23D5713B000C7E67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -34,7 +32,7 @@
 		1CB7AA7D23D57439000C7E67 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		1CB7AA7F23D57447000C7E67 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		1CB7AA8123D57451000C7E67 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		1CB7AA8423D57474000C7E67 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1CCE599823D6D1020066FBB6 /* APIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
 		784AC15662D01AA94927F34B /* Pods-VidhiEngneeringAIDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VidhiEngneeringAIDemo.release.xcconfig"; path = "Target Support Files/Pods-VidhiEngneeringAIDemo/Pods-VidhiEngneeringAIDemo.release.xcconfig"; sourceTree = "<group>"; };
 		914D545E94720CE85A2B2CC5 /* Pods-VidhiEngneeringAIDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VidhiEngneeringAIDemo.debug.xcconfig"; path = "Target Support Files/Pods-VidhiEngneeringAIDemo/Pods-VidhiEngneeringAIDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CCEF4707FE6687D7ED9B080A /* Pods_VidhiEngneeringAIDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VidhiEngneeringAIDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +77,6 @@
 				1CB7AA7523D573C8000C7E67 /* Networking */,
 				1CB7AA7423D573B3000C7E67 /* ViewController */,
 				1CB7AA8323D57462000C7E67 /* Application */,
-				1CB7AA6423D57139000C7E67 /* ViewController.swift */,
 				1CB7AA6623D57139000C7E67 /* Main.storyboard */,
 				1CB7AA6923D5713B000C7E67 /* Assets.xcassets */,
 				1CB7AA6B23D5713B000C7E67 /* LaunchScreen.storyboard */,
@@ -100,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				1CB7AA7D23D57439000C7E67 /* RequestManager.swift */,
+				1CCE599823D6D1020066FBB6 /* APIEndPoint.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -132,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				1CB7AA6223D57139000C7E67 /* AppDelegate.swift */,
-				1CB7AA8423D57474000C7E67 /* Constant.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -271,12 +268,11 @@
 			files = (
 				1CB7AA7E23D57439000C7E67 /* RequestManager.swift in Sources */,
 				1CB7AA7C23D57428000C7E67 /* PostTableCell.swift in Sources */,
-				1CB7AA6523D57139000C7E67 /* ViewController.swift in Sources */,
-				1CB7AA8523D57474000C7E67 /* Constant.swift in Sources */,
 				1CB7AA6323D57139000C7E67 /* AppDelegate.swift in Sources */,
 				1CB7AA7923D573F6000C7E67 /* HomeViewController.swift in Sources */,
 				1CB7AA8223D57451000C7E67 /* Post.swift in Sources */,
 				1CB7AA8023D57447000C7E67 /* PostController.swift in Sources */,
+				1CCE599923D6D1020066FBB6 /* APIEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

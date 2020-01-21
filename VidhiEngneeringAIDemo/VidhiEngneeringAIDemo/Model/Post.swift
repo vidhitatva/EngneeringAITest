@@ -7,10 +7,10 @@
 //
 
 import Foundation
-struct _highlightResult : Codable {
+struct highlightResult : Codable {
     let title : Title?
     let author : Author?
-    let story_text : Story_text?
+    let story_text : StoryText?
     
     enum CodingKeys: String, CodingKey {
         
@@ -23,7 +23,7 @@ struct _highlightResult : Codable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         title = try values.decodeIfPresent(Title.self, forKey: .title)
         author = try values.decodeIfPresent(Author.self, forKey: .author)
-        story_text = try values.decodeIfPresent(Story_text.self, forKey: .story_text)
+        story_text = try values.decodeIfPresent(StoryText.self, forKey: .story_text)
     }
     
 }
@@ -65,7 +65,7 @@ struct Hits : Codable {
     let created_at_i : Int?
     let _tags : [String]?
     let objectID : String?
-    let highlightResult : _highlightResult?
+    let _highlightResult : highlightResult?
     var isActive : Bool = false
     
     enum CodingKeys: String, CodingKey {
@@ -85,7 +85,7 @@ struct Hits : Codable {
         case created_at_i = "created_at_i"
         case _tags = "_tags"
         case objectID = "objectID"
-        case highlightResult = "_highlightResult"
+        case _highlightResult = "_highlightResult"
     }
     
     init(from decoder: Decoder) throws {
@@ -105,7 +105,7 @@ struct Hits : Codable {
         created_at_i = try values.decodeIfPresent(Int.self, forKey: .created_at_i)
         _tags = try values.decodeIfPresent([String].self, forKey: ._tags)
         objectID = try values.decodeIfPresent(String.self, forKey: .objectID)
-        highlightResult = try values.decodeIfPresent(_highlightResult.self, forKey: .highlightResult)
+        _highlightResult = try values.decodeIfPresent(highlightResult.self, forKey: ._highlightResult)
     }
     
 }
@@ -149,7 +149,7 @@ struct Post : Codable {
     
 }
 
-struct Story_text : Codable {
+struct StoryText : Codable {
     let value : String?
     let matchLevel : String?
     let matchedWords : [String]?
